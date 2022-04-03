@@ -15,19 +15,14 @@
 
 <p>
 
-    <%@page import="java.util.Date" %>
-    <%@page import="ru.complexhex.JavaEETest.logic.TestClass" %>
+    <%
+        String name = request.getParameter("name");
 
-    <%=
-    new Date()
     %>
 
-    <%TestClass testClass = new TestClass(); %>
-
     <%=
-   testClass.getInfo()
+    "Hello " + name
     %>
-
 </p>
 
 </body>
