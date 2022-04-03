@@ -8,7 +8,7 @@
         <servlet-name>FirstServlet</servlet-name>
         <servlet-class>ru.complexhex.JavaEETest.FirstServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/test-servlet</url-pattern>
@@ -23,5 +23,38 @@
         <servlet-name>FirstJSP</servlet-name>
         <url-pattern>/hello-world-jsp</url-pattern>
     </servlet-mapping>
-    
+
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>ru.complexhex.JavaEETest.SetCookiesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/set-cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>ru.complexhex.JavaEETest.GetCookiesServlet</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/get-cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>ru.complexhex.JavaEETest.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/delete-cookies</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
 </web-app>
