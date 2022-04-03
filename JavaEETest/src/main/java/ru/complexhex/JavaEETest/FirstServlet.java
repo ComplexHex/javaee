@@ -21,6 +21,9 @@ public class FirstServlet extends HttpServlet {
         printWriter.println("<h1> Helloooo" + surname + "</h1>");
 
         printWriter.println("</html>");
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/testJsp.jsp");
+        dispatcher.forward(request, response);
     }
 
     @Override
