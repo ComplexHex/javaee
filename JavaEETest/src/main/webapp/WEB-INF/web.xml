@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
         <servlet-class>ru.complexhex.JavaEETest.FirstServlet</servlet-class>
@@ -13,6 +12,16 @@
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/hello-world</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FirstJSP</servlet-name>
+        <jsp-file>/firstJsp.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstJSP</servlet-name>
+        <url-pattern>/hello-world-jsp</url-pattern>
     </servlet-mapping>
     
 </web-app>

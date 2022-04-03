@@ -15,15 +15,17 @@
 
 <p>
 
-    <%--    <% Date now = new Date();--%>
-    <%--        String someString = "Current date : " + now;--%>
-    <%--    %>--%>
-    <%--    <%= someString %>--%>
+    <%@page import="java.util.Date" %>
+    <%@page import="ru.complexhex.JavaEETest.logic.TestClass" %>
 
-    <%
-        for (int i = 0; i < 10; i++) {
-            out.println("<p>" + "hello: " + i + "</p>");
-        }
+    <%=
+    new Date()
+    %>
+
+    <%TestClass testClass = new TestClass(); %>
+
+    <%=
+   testClass.getInfo()
     %>
 
 </p>
